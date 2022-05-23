@@ -1,0 +1,14 @@
+C:\Users\HP\Desktop\training\TrainingAssignments\TrainingAssignments\obj\Debug\netcoreapp3.1\TrainingAssignments.csproj.AssemblyReference.cache
+C:\Users\HP\Desktop\training\TrainingAssignments\TrainingAssignments\obj\Debug\netcoreapp3.1\TrainingAssignments.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\HP\Desktop\training\TrainingAssignments\TrainingAssignments\obj\Debug\netcoreapp3.1\TrainingAssignments.AssemblyInfoInputs.cache
+C:\Users\HP\Desktop\training\TrainingAssignments\TrainingAssignments\obj\Debug\netcoreapp3.1\TrainingAssignments.AssemblyInfo.cs
+C:\Users\HP\Desktop\training\TrainingAssignments\TrainingAssignments\obj\Debug\netcoreapp3.1\TrainingAssignments.csproj.CoreCompileInputs.cache
+C:\Users\HP\Desktop\training\TrainingAssignments\TrainingAssignments\bin\Debug\netcoreapp3.1\TrainingAssignments.exe
+C:\Users\HP\Desktop\training\TrainingAssignments\TrainingAssignments\bin\Debug\netcoreapp3.1\TrainingAssignments.deps.json
+C:\Users\HP\Desktop\training\TrainingAssignments\TrainingAssignments\bin\Debug\netcoreapp3.1\TrainingAssignments.runtimeconfig.json
+C:\Users\HP\Desktop\training\TrainingAssignments\TrainingAssignments\bin\Debug\netcoreapp3.1\TrainingAssignments.runtimeconfig.dev.json
+C:\Users\HP\Desktop\training\TrainingAssignments\TrainingAssignments\bin\Debug\netcoreapp3.1\TrainingAssignments.dll
+C:\Users\HP\Desktop\training\TrainingAssignments\TrainingAssignments\bin\Debug\netcoreapp3.1\TrainingAssignments.pdb
+C:\Users\HP\Desktop\training\TrainingAssignments\TrainingAssignments\obj\Debug\netcoreapp3.1\TrainingAssignments.dll
+C:\Users\HP\Desktop\training\TrainingAssignments\TrainingAssignments\obj\Debug\netcoreapp3.1\TrainingAssignments.pdb
+C:\Users\HP\Desktop\training\TrainingAssignments\TrainingAssignments\obj\Debug\netcoreapp3.1\TrainingAssignments.genruntimeconfig.cache
