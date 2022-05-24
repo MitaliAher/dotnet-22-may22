@@ -6,7 +6,7 @@ namespace TrainingAssignments
 {
     class Array
     {
-        public static void Main(string[] args)
+        public static void Main12(string[] args)
         {
             string s;
              string rev = string.Empty;
