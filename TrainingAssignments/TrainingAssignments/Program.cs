@@ -4,7 +4,7 @@ namespace TrainingAssignments
 {
     class Program
     {
-        static void Main(string[] args)
+        static void Main1(string[] args)
         {
             Console.WriteLine("Enter a Number");
             int n = Convert.ToInt32(Console.ReadLine());
