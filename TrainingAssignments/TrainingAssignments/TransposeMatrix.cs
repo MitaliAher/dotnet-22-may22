@@ -6,7 +6,7 @@ namespace TrainingAssignments
 {
     class TransposeMatrix
     {
-        public static void Main()
+        public static void Main9()
         {
 
             
