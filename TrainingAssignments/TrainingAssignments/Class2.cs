@@ -50,7 +50,7 @@ namespace TrainingAssignments
     }
     class Class2
     {
-        public static void Main()
+        public static void Main1()
         {
             SampleClass S = new SampleClass();
             S.SetValue(20);
