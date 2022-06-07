@@ -10,7 +10,7 @@ namespace TrainingAssignments
 {
     public class Class4
     {
-        public static void Main(string[] args)
+        public static void Main11(string[] args)
         {
             int total = 3;
             Person[] persons = new Person[total];
