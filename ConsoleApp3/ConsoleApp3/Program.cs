@@ -35,6 +35,7 @@ namespace ConsoleApp3
                         tt.Fname = name;
                         dd.SampleTables.Add(tt);
                         dd.SaveChanges();
+                        Console.WriteLine("Record has been added in database  ");
 
 
                         break;
@@ -60,6 +61,7 @@ namespace ConsoleApp3
                         UpdateObject.Fname = newName;
                         dd.SampleTables.Update(UpdateObject);
                         dd.SaveChanges();
+                        Console.WriteLine("Record has been Updated  ");
 
                         break;
                     case 4:
@@ -69,13 +71,14 @@ namespace ConsoleApp3
                         var DeleteObject = dd.SampleTables.Where(x => x.Id == DeleteItem).FirstOrDefault();
                         dd.SampleTables.Remove(DeleteObject);
                         dd.SaveChanges();
+                        Console.WriteLine("Record has been Deleted  ");
                         break;
                     case 5:
                         Console.WriteLine("     Thank You     ");
                         Environment.Exit(0);
                         break;
                     default:
-                        Console.WriteLine("Invalid Choice :");
+                        Console.WriteLine("Invalid Choice ");
                         break;
 
                         //foreach (var item in data)
