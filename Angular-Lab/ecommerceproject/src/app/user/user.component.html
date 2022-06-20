@@ -1,0 +1,42 @@
+<p>user works!</p>
+
+<table>
+    <tr>
+      <td>User Id </td>
+      <td>
+        <input [(ngModel)]="UserModel.UserID" type="text">
+      </td>
+    </tr>
+    <tr>
+      <td>User Name </td>
+      <td>
+        <input [(ngModel)]="UserModel.UserName" type="text">
+      </td>
+    </tr>
+  
+    <input type="submit" (click)="AddUser()">
+    <input type="button" (click)="getData()" value="getData">
+
+  </table>
+  <table align="center" border="3">
+    <tr>
+      <td>
+         ID
+      </td>
+      <td>
+        User ID
+      </td>
+      <td>User Name</td>
+    </tr>
+    <tr ngFor="let item of UserModels">
+      <td>
+        {{UserModel.id}}
+      </td>
+      <td>
+        {{UserModel.UserID}}
+      </td>
+      <td>
+        {{UserModel.UserName}}
+      </td>
+    </tr>
+  </table>

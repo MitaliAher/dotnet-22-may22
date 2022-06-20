@@ -2,19 +2,20 @@ import { CommonModule } from '@angular/common';
 import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { RouterModule } from '@angular/router';
-import {HttpClientModule} from '@angular/common/http';
+import { AdminRoutes } from '../routing/routing.admin';
+import { AdminComponent } from './admin.component';
+
 
 @NgModule({
   declarations: [
-    
-  ],
+    AdminComponent,
+],
   imports: [
     CommonModule,
     FormsModule,
-    HttpClientModule,
-   // RouterModule.forChild()
+    RouterModule.forChild(AdminRoutes)
   ],
   providers: [],
-  //bootstrap: [t]
+  bootstrap: [AdminComponent]
 })
-export class UserModule { }
+export class AdminModule { }
