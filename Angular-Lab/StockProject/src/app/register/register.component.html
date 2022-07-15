@@ -1,0 +1,40 @@
+<p>register works!</p>
+
+<!DOCTYPE html>
+<html>
+
+<body>
+
+  <h1>The input required attribute</h1>
+
+  <form action="/action_page.php">
+
+    <label for="companyCode">CompanyCode:</label>
+    <input type="text" id="companycode" name="companycode"  [(ngModel)]="regi.companyCode"  required><br>
+
+    <label for="companyname">Companyname:</label>
+    <input type="text" id="companyname" name="companyname" [(ngModel)]="regi.companyName" required><br>
+
+    <label for="companyname">Companyceo:</label>
+    <input type="text" id="companyceo" name="companyceo"  [(ngModel)]="regi.companyCeo" required><br>
+
+    <label for="companyname">Companyturnover:</label>
+    <input type="text" id="companyturnover" name="companyturnover" [(ngModel)]="regi.companyTurnover" placeholder="Turnover > 10cr" required><br>
+
+    <label for="companyname">Companywebsite:</label>
+    <input type="text" id="companywebsite" name="companywebsite"  [(ngModel)]="regi.companyWebsite" required><br>
+
+    <label for="companyname">stockexchange:</label>
+    <input type="text" id="stockExchange"  name="stockexchange" [(ngModel)]="regi.stockExchange" required><br>
+
+
+    
+    <input type="submit" (click)="RegisterNow()">
+
+   
+
+  </form>
+
+</body>
+
+</html>
