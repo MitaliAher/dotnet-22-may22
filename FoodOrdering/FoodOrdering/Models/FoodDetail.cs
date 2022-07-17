@@ -13,5 +13,6 @@ namespace FoodOrdering.Models
         public string FoodDescription { get; set; }
         public int? FoodPrice { get; set; }
         public string FoodImage { get; set; }
+        public int? IsActive { get; set; }
     }
 }

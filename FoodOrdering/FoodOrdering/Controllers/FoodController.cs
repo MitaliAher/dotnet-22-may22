@@ -26,6 +26,15 @@ namespace FoodOrdering.Controllers
         [HttpPost]
         public string post([FromBody] FoodDetail ct)
         {
+            // db.FoodDetails.Add(ct);
+            //db.SaveChanges();
+            if (ct.IsActive == 1)
+            {
+                db.SaveChanges();
+            }
+            else 
+                return "no";
+
             db.FoodDetails.Add(ct);
             db.SaveChanges();
             return "Success";

@@ -3,15 +3,16 @@ import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import { Details } from '../Models/detail';
 import { AdddetailService } from '../Services/adddetail.service';
+import { FoodService } from '../Services/food.service';
 
 @Component({
-  selector: 'app-category',
-  templateUrl: './category.component.html',
-  styleUrls: ['./category.component.css']
+  selector: 'app-adddetails',
+  templateUrl: './adddetails.component.html',
+  styleUrls: ['./adddetails.component.css']
 })
-export class CategoryComponent implements OnInit {
+export class AdddetailsComponent implements OnInit {
 
- 
+
   constructor(public httpc: HttpClient, private _detail: AdddetailService, private _router: Router) { }
 
   ngOnInit(): void {
@@ -58,3 +59,5 @@ export class CategoryComponent implements OnInit {
 
 
 }
+
+  

@@ -5,4 +5,5 @@ export class Food{
   foodDescription:string='';
   foodPrice:Number=0;
   foodImage:string='';
+  isActive:Number=0;
 }
