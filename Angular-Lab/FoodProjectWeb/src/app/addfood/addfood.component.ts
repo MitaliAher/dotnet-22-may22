@@ -24,13 +24,13 @@ export class AddfoodComponent implements OnInit {
 
     var addo={
       catId:Number(this.addfood.catId),
-      foodName:this.addfood.foodImage,
+      foodName:this.addfood.foodName,
       foodDescription:this.addfood.foodDescription,
       foodPrice:this.addfood.foodPrice,
       foodImage:this.addfood.foodImage
     }
 
-    this.httpc.post("https://localhost:44374/api/Food",addo).subscribe(res=>this.PostSuccess(res),res=>this.PostError(res));
+    this.httpc.post("https://localhost:44385/api/Food",addo).subscribe(res=>this.PostSuccess(res),res=>this.PostError(res));
     this.addfood=new Food();
   }
   PostSuccess(res:any){
@@ -43,7 +43,7 @@ export class AddfoodComponent implements OnInit {
 
   Show(){
     console.log("Hi");
-    this.httpc.get("https://localhost:44374/api/Food").subscribe(res=>this.GetSuccess(res),res=>this.GetError(res));
+    this.httpc.get("https://localhost:44385/api/Food").subscribe(res=>this.GetSuccess(res),res=>this.GetError(res));
   }
   GetSuccess(input:any){
     this.addfoods=input;

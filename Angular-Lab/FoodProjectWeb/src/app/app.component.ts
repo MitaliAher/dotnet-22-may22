@@ -1,22 +1,17 @@
 import { Component } from '@angular/core';
 import { AuthService } from './Services/auth.service';
+import { CartService } from './Services/cart.service';
 
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css']
 })
-export class AppComponent {
+export class AppComponent  {
   title = 'FoodProjectWeb';
 
-  public foods:any;
-  searchKey:string='';
-
-  public searchTerm:string='';
-  CartService: any;
-  FoodService: any;
-
-  constructor(private _auth:AuthService){
+  public searchTerm !: string;
+  constructor(private _auth:AuthService,public cartservice:CartService){
 
   }
   LoggedIn(input:boolean){
@@ -30,11 +25,13 @@ export class AppComponent {
   LogOut(){
     this._auth.logoutUser();
   }
-
-  search(event:any)
-  {
-    this.searchTerm=(event.target as HTMLInputElement).value;
+  search(event:any){
+    this.searchTerm = (event.target as HTMLInputElement).value;
     console.log(this.searchTerm);
-    this.FoodService.search.next(this.searchTerm);
+    this.cartservice.search.next(this.searchTerm);
   }
+
+
+
+
 }

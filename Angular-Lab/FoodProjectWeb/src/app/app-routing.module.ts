@@ -8,6 +8,7 @@ import { FoodComponent } from './food/food.component';
 import { HomeComponent } from './home/home.component';
 import { LoginComponent } from './login/login.component';
 import { RegisterComponent } from './register/register.component';
+import { RestaurantComponent } from './restaurant/restaurant.component';
 import { UserinfoComponent } from './userinfo/userinfo.component';
 
 const routes: Routes = [
@@ -46,6 +47,10 @@ const routes: Routes = [
   {
     path: 'userinfo',
     component: UserinfoComponent
+  },
+  {
+    path: 'restaurant',
+    component: RestaurantComponent
   },
 ];
 

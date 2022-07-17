@@ -20,6 +20,7 @@ namespace EcommerceAPI.Models
         public virtual DbSet<Admin> Admins { get; set; }
         public virtual DbSet<Product> Products { get; set; }
         public virtual DbSet<UserDetail> UserDetails { get; set; }
+        public virtual DbSet<UserProduct> UserProducts { get; set; }
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
@@ -71,6 +72,24 @@ namespace EcommerceAPI.Models
                     .HasColumnName("UserID");
 
                 entity.Property(e => e.UserName).HasMaxLength(50);
+            });
+
+            modelBuilder.Entity<UserProduct>(entity =>
+            {
+                entity.ToTable("UserProduct");
+
+                entity.HasIndex(e => e.Id, "IX_UserProduct");
+
+                entity.Property(e => e.Id)
+                    .ValueGeneratedNever()
+                    .HasColumnName("id");
+
+                entity.Property(e => e.OrderId).HasColumnName("orderID");
+
+                entity.HasOne(d => d.Order)
+                    .WithMany(p => p.UserProducts)
+                    .HasForeignKey(d => d.OrderId)
+                    .HasConstraintName("FK_UserProduct_Product");
             });
 
             OnModelCreatingPartial(modelBuilder);

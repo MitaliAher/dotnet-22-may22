@@ -16,6 +16,9 @@ import { CartComponent } from './cart/cart.component';
 import { AddfoodComponent } from './addfood/addfood.component';
 import { AddcategoryComponent } from './addcategory/addcategory.component';
 import { UserinfoComponent } from './userinfo/userinfo.component';
+import { FilterPipe } from './Shared/filter.pipe';
+import { RestaurantComponent } from './restaurant/restaurant.component';
+//import { ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -29,7 +32,10 @@ import { UserinfoComponent } from './userinfo/userinfo.component';
     CartComponent,
     AddfoodComponent,
     AddcategoryComponent,
-    UserinfoComponent
+    UserinfoComponent,
+    FilterPipe,
+    RestaurantComponent,
+    //ReactiveFormsModule
   ],
   imports: [
     BrowserModule,

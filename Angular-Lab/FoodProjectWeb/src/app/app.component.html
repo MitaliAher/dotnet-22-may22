@@ -29,9 +29,10 @@
         </li>
       </ul>
     </div>
-   <form>
-    <input text="text" class="form-control" [(ngModel)]="searchTerm" name="foods" (keyup.enter)="search($event)" placeholder="search">
-   </form>
+    <div class="form-group">
+      <input type="text" class="form-control" [(ngModel)]="searchTerm" (keyup)="search($event)" placeholder="search products">
+  </div>
+  <span class="fas fa-search search-icon"></span>
   </div>
 </nav>
 
