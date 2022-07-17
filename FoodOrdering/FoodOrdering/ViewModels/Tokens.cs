@@ -12,5 +12,7 @@ namespace FoodOrdering.ViewModels
         public string RefreshToken { get; set; }
 
         public bool IsAdmin { get; set; }
+
+        public bool IsRestaurant { get; set; }
     }
 }

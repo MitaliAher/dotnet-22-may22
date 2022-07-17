@@ -27,13 +27,22 @@ namespace FoodOrdering.ViewModels
         public Tokens Authenicate(LoginViewModel registerViewModel, bool IsRegister)
         {
             var _isAdmin = false;
+            var _isRestaurant = false;
             if (IsRegister)
             {
                 RegisterTbl lt = new RegisterTbl();
                 lt.UserName = registerViewModel.UserName;
                 lt.Password = registerViewModel.Password;
+                lt.PhoneNo = registerViewModel.PhoneNo;
+                lt.Email = registerViewModel.Email;
+                lt.Address = registerViewModel.Address;
                 db.RegisterTbls.Add(lt);
                 db.SaveChanges();
+            }
+
+            else if (db.RegisterTbls.Any(x => x.UserName == registerViewModel.UserName && x.Password == registerViewModel.Password && x.IsRestaurant == 1))
+            {
+                _isRestaurant = db.RegisterTbls.Any(x => x.UserName == registerViewModel.UserName && x.Password == registerViewModel.Password && x.IsRestaurant == 1);
             }
             else
             {
@@ -58,7 +67,7 @@ namespace FoodOrdering.ViewModels
                 SigningCredentials = new SigningCredentials(new SymmetricSecurityKey(tokenkey), SecurityAlgorithms.HmacSha256Signature)
             };
             var token = tokenHandler.CreateToken(tokenDescriptor);
-            return new Tokens { Token = tokenHandler.WriteToken(token), IsAdmin = _isAdmin };
+            return new Tokens { Token = tokenHandler.WriteToken(token), IsAdmin = _isAdmin ,IsRestaurant = _isRestaurant};
         }
     }
 }

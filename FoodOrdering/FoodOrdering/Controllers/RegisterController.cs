@@ -45,6 +45,9 @@ namespace FoodOrdering.Controllers
             LoginViewModel login = new LoginViewModel();
             login.UserName = registerViewModel.UserName;
             login.Password = registerViewModel.Password;
+            login.PhoneNo = registerViewModel.PhoneNo;
+            login.Email = registerViewModel.Email;
+            login.Address = registerViewModel.Address;
             var token = iJWTMangerRepository.Authenicate(login, true);
             if (token == null)
             {

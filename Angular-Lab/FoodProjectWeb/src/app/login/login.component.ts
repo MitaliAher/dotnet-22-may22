@@ -21,7 +21,7 @@ export class LoginComponent implements OnInit {
       localStorage.setItem('token', res.token);
       if (res.isAdmin)
         this._router.navigate(['/dashboard']);
-        else if(res.isRestaurant)
+      else if(res.isRestaurant)
         this._router.navigate(['/restaurant']);
       else
         this._router.navigate(['/food']);

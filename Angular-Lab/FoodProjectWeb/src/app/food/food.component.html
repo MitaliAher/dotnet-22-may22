@@ -2,7 +2,7 @@
 
 
 <div class="row mt-5" style="background-color:lightgray;">
-    <div class="col-md-4 mb-3" *ngFor="let product of foods | filter:searchKey:'title'" >
+    <div class="col-md-4 mb-3" *ngFor="let product of foods | filter:searchKey:'foodName'" >
         <div class="card" style="width: 18rem;">
             <img class="card-img-top" src="../../assets/{{product.foodImage}}" alt="Card image cap">
             <div class="card-body">
