@@ -12,5 +12,7 @@ namespace FoodOrdering.Models
         public string UserName { get; set; }
         public string PaymentMode { get; set; }
         public string Address { get; set; }
+        public string FoodName { get; set; }
+        public int? FoodPrice { get; set; }
     }
 }

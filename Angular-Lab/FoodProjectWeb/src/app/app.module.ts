@@ -21,6 +21,7 @@ import { RestaurantComponent } from './restaurant/restaurant.component';
 import { ApproveComponent } from './approve/approve.component';
 import { AdddetailsComponent } from './adddetails/adddetails.component';
 import { FinalorderComponent } from './finalorder/finalorder.component';
+import { UpdateComponent } from './update/update.component';
 //import { ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
@@ -41,6 +42,7 @@ import { FinalorderComponent } from './finalorder/finalorder.component';
     ApproveComponent,
     AdddetailsComponent,
     FinalorderComponent,
+    UpdateComponent,
     
   ],
   imports: [

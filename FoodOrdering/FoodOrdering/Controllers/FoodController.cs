@@ -39,6 +39,19 @@ namespace FoodOrdering.Controllers
             db.SaveChanges();
             return "Success";
         }
+        [HttpPut]
+        public string Put([FromBody] FoodDetail tblsample)
+        {
+            var tblsampleObj = db.FoodDetails.Where(x => x.Id == tblsample.Id);
+            if (tblsampleObj != null)
+            {
+                db.FoodDetails.Update(tblsample);
+                db.SaveChanges();
+                return "Success";
+            }
+
+            return "Fail";
+        }
     }
 }
 

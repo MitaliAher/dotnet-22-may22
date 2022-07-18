@@ -71,6 +71,8 @@ namespace FoodOrdering.Models
 
                 entity.Property(e => e.Address).HasMaxLength(50);
 
+                entity.Property(e => e.FoodName).HasMaxLength(50);
+
                 entity.Property(e => e.PaymentMode).HasMaxLength(50);
 
                 entity.Property(e => e.UserId)

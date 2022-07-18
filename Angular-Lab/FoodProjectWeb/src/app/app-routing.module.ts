@@ -13,6 +13,7 @@ import { HomeComponent } from './home/home.component';
 import { LoginComponent } from './login/login.component';
 import { RegisterComponent } from './register/register.component';
 import { RestaurantComponent } from './restaurant/restaurant.component';
+import { UpdateComponent } from './update/update.component';
 import { UserinfoComponent } from './userinfo/userinfo.component';
 
 const routes: Routes = [
@@ -71,6 +72,10 @@ const routes: Routes = [
   {
     path: 'category',
     component: CategoryComponent
+  },
+  {
+    path: 'update',
+    component: UpdateComponent
   },
 ];
 
